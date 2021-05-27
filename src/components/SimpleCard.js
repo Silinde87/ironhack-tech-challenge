@@ -45,9 +45,9 @@ export default function OutlinedCard(props) {
 					Price: {price}
 				</Typography>
 			</CardContent>
-			<CardActions>
+			<CardActions style={{justifyContent: 'center'}}>
 				<Link to={"/" + id}>
-					<Button size="small">Learn More</Button>
+					<Button size="small">Check Details</Button>
 				</Link>
 			</CardActions>
 		</Card>
