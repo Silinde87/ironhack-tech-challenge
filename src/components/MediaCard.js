@@ -22,7 +22,7 @@ export default function MediaCard(props) {
 		props.phone[0];
 
 	return (
-		<Card className={classes.root}>
+		<Card id="phone-details" className={classes.root}>
 			<CardActionArea>
 				<CardMedia
 					className={classes.media}
@@ -31,11 +31,20 @@ export default function MediaCard(props) {
 				/>
 				<CardContent>
 					<Typography gutterBottom variant="h5" component="h2">
-						{name}
+						{name} by {manufacturer}
 					</Typography>
 					<Typography variant="body2" color="textSecondary" component="p">
 						{description}
 					</Typography>
+                    <Typography gutterBottom variant="h6" component="h3">
+						Price: {price}€
+					</Typography>
+                    <Typography className={classes.pos} color="textSecondary">
+                        Color: {color} / Screen: {screen}
+                    </Typography>
+                    <Typography className={classes.pos} color="textSecondary">
+                        CPU: {processor} / Ram: {ram}GB
+                    </Typography>
 				</CardContent>
 			</CardActionArea>
 		</Card>

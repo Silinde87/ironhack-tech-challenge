@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+
+import SimpleCard from "../components/SimpleCard";
 
 function PhonesListPage() {
 	const [phonesList, setPhonesList] = useState([]);
@@ -27,18 +28,18 @@ function PhonesListPage() {
 
 
 	return (
-		<div>
+		<section id="phones-list-section">
             <h2>Phones List</h2>
-			{
-                phonesList.map(phone => {
-                    return (
-                        <Link key={phone.id} to={'/'+phone.id}>
-                            <p >{phone.name}</p>
-                        </Link>
-                    )
-                })
-            }
-		</div>
+            <div id="phones-list-container">
+                {
+                    phonesList.map(phone => {
+                        return (
+                            <SimpleCard key={phone.id} phone={phone}/>                      
+                        )
+                    })
+                }
+            </div>
+		</section>
 	);
 }
 
