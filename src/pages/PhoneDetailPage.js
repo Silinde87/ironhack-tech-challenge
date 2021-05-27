@@ -1,30 +1,23 @@
 import React, { useEffect, useState } from "react";
 import MediaCard from "../components/MediaCard";
+import phonesService from "../services/phones.service";
 
 export default function PhoneDetailPage(props) {
 	const [phone, setPhone] = useState({});
-    const {id} = props.match.params;
+	const { id } = props.match.params;
 
-    //This function is calls the API to retrieve the phones
-	const callApi = async (id) => {
-		const response = await fetch(`http://localhost:5000/api/phones/${id}`);
-		const body = await response.json();
-		return body;
-	};
-
-    //Invoke callApi() when component did mount
+	//call to service when component did mount
 	useEffect(() => {
-		callApi(id)
-        .then(res => setPhone(res))
-        .catch(err => console.error(err));
-	}, []);
+		phonesService
+			.getPhoneById(id)
+			.then((res) => setPhone(res))
+			.catch((err) => console.error(err));
+	}, [id]);
 
-    //The phonesList is retrieved
-    useEffect(() => {
-        //console.log('here', phone);
-    }, [phone]);
-
-    return (
-        Array.isArray(phone) && <MediaCard phone={phone} />
-    )
+	return (
+		<section id="phone-detail-section">
+			<h2>Phone Detail</h2>
+			{Array.isArray(phone) && <MediaCard phone={phone} />}
+		</section>
+	);
 }

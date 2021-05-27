@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
 	root: {
-		maxWidth: 275,
+		width: 275,
 	},
 	bullet: {
 		display: "inline-block",

@@ -16,8 +16,12 @@
 
 #phones-list-container{
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  place-items: center;
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
+}
+section{
+  margin: 0px 80px;
 }
 
 nav{
@@ -37,4 +41,25 @@ nav{
 }
 #phone-details{
   margin: auto;
+}
+
+@media (max-width: 1024px) {
+  #phones-list-container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  #phones-list-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 375px) {
+  #phones-list-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  section{
+    margin: 0px 20px;
+  }
 }
