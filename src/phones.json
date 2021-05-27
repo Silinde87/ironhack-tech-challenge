@@ -9,7 +9,8 @@
       "imageFileName": "IPhone_7.png",
       "screen": "4,7 inch IPS",
       "processor": "A10 Fusion",
-      "ram": 2
+      "ram": 2,
+      "url": "https://github.com/VictorRodriguezIronhack/reto_web/blob/main/IPhone_7.png?raw=true"
   },
   {
       "id": 1,
@@ -21,7 +22,8 @@
       "imageFileName": "Galaxy_S7.png",
       "screen": "5,1 inch Quad-HD",
       "processor": "Snapdragon 820",
-      "ram": 4
+      "ram": 4,
+      "url": "https://github.com/VictorRodriguezIronhack/reto_web/blob/main/Galaxy_S7.png?raw=true"
   },
   {
       "id": 2,
@@ -33,7 +35,8 @@
       "imageFileName": "Honor_10.png",
       "screen": "5,84 inch Full-HD",
       "processor": "Kirin 970",
-      "ram": 6
+      "ram": 6,
+      "url": "https://github.com/VictorRodriguezIronhack/reto_web/blob/main/Honor_10.png?raw=true"
   },
   {
       "id": 3,
@@ -45,7 +48,8 @@
       "imageFileName": "P10_Lite.jpg",
       "screen": "5,2 inch Full-HD",
       "processor": "Kirin 658",
-      "ram": 4
+      "ram": 4,
+      "url": "https://github.com/VictorRodriguezIronhack/reto_web/blob/main/P10_Lite.jpg?raw=true"
   },
   {
       "id": 4,
@@ -57,7 +61,8 @@
       "imageFileName": "Nokia_7.1.jpg",
       "screen": "5,84 inch Full-HD",
       "processor": "Octa-core",
-      "ram": 4
+      "ram": 4,
+      "url": "https://github.com/VictorRodriguezIronhack/reto_web/blob/main/Nokia_7.1.jpg?raw=true"
   },
   {
       "id": 5,
@@ -69,7 +74,8 @@
       "imageFileName": "ZenPhone_5.jpg",
       "screen": "6,2 inch Full-HD",
       "processor": "Snapdragon 636",
-      "ram": 6
+      "ram": 6,
+      "url": "https://github.com/VictorRodriguezIronhack/reto_web/blob/main/ZenPhone_5.jpg?raw=true"
   },
   {
       "id": 6,
@@ -81,7 +87,8 @@
       "imageFileName": "Xiaomi_MI_A2.jpeg",
       "screen": "5,99 inch Full-HD",
       "processor": "Snapdragon 660",
-      "ram": 6
+      "ram": 6,
+      "url": "https://github.com/VictorRodriguezIronhack/reto_web/blob/main/Xiaomi_MI_A2.jpeg?raw=true"
   },
   {
       "id": 7,
@@ -93,6 +100,7 @@
       "imageFileName": "Moto_G6.png",
       "screen": "5,7 inch Full-HD",
       "processor": "Snapdragon 450",
-      "ram": 3
+      "ram": 3,
+      "url": "https://github.com/VictorRodriguezIronhack/reto_web/blob/main/Moto_G6.png?raw=true"
   }
 ]

@@ -21,10 +21,10 @@ export default function PhoneDetailPage(props) {
 
     //The phonesList is retrieved
     useEffect(() => {
-        //console.log(phone);
+        //console.log('here', phone);
     }, [phone]);
 
     return (
-        <MediaCard phone={phone} />
+        Array.isArray(phone) && <MediaCard phone={phone} />
     )
 }
