@@ -24,6 +24,11 @@ app.get("/api/phones", (req, res) => {
 	res.send({ phonesList });
 });
 
+app.get("/api/phones/:id", (req, res) => {
+	const phone = phonesList.filter(phone => phone.id == req.params.id);
+	res.send(phone);
+})
+
 // catch 404
 app.use((req, res) => {
 	return res.status(404).json({ message: "Not found" });

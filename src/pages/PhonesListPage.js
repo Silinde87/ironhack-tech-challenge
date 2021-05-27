@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function PhonesListPage() {
 	const [phonesList, setPhonesList] = useState([]);
@@ -27,9 +28,14 @@ function PhonesListPage() {
 
 	return (
 		<div>
+            <h2>Phones List</h2>
 			{
                 phonesList.map(phone => {
-                    return <p key={phone.id}>{phone.name}</p>
+                    return (
+                        <Link key={phone.id} to={'/'+phone.id}>
+                            <p >{phone.name}</p>
+                        </Link>
+                    )
                 })
             }
 		</div>
